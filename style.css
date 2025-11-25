@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+.card {
+  margin: 100px auto 0;
+  background: #2a799b;
+  background: linear-gradient(
+    152deg,
+    rgba(42, 121, 155, 1) 0%,
+    rgba(163, 163, 163, 1) 100%
+  );
+  border-radius: 30px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+}
+
+.search {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 290px auto 0px;
+  position: absolute;
+  z-index: 999;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search.active {
+  transform: translateY(-290px);
+}
+
+.search input {
+  width: 80%;
+  padding: 20px;
+  border: 3px solid #555;
+  border-radius: 50px;
+  font-size: 17px;
+  z-index: 999;
+}
+
+.search input::placeholder {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.search-button {
+  border-radius: 50%;
+  padding: 16px;
+  border: 3px solid #555;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 25px;
+}
+
+.city-name {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin: 40px 0;
+}
+
+.weather-img {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.temperature {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.specs {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.humidity {
+  width: 30px;
+  height: 50px;
+  align-self: center;
+}
+
+.wind {
+  width: 70px;
+  height: 50px;
+  align-self: center;
+}
+
+.spec {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+}
+
+.spec h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.spec p {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.main {
+  /* display: none; */
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  margin-top: 100px;
+}
+
+.main.active {
+  /* display: block; */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.main.active-disapear {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.error {
+  display: none;
+  position: absolute;
+  left: 32%;
+  top: 15%;
+
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+
+/* MEIDA QUERY */
+
+@media (max-width: 577px) {
+  .spec p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .spec p {
+    font-size: 25px;
+  }
+}

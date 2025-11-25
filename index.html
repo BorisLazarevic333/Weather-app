@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" class="search-input" />
+        <button class="search-button">
+          <img src="img/search.png" alt="Search" class="search-icon" />
+        </button>
+      </div>
+      <div class="error"><p>Invalid city name</p></div>
+      <div class="main">
+        <h2 class="city-name">New York</h2>
+        <div class="weather">
+          <img src="svg/clear.svg" alt="" class="weather-img" />
+        </div>
+        <div class="temperature">25°C</div>
+        <div class="specs">
+          <div class="spec">
+            <img src="img/humidity.png" alt="" class="humidity" />
+            <div class="info">
+              <p class="humidity-value">60%</p>
+              <h3>Humidity</h3>
+            </div>
+          </div>
+          <div class="spec">
+            <img src="img/wind.png" alt="" class="wind" />
+            <div class="info">
+              <p class="wind-value">10 km/h</p>
+              <h3>Wind speed</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
