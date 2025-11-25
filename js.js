@@ -47,7 +47,8 @@ async function checkWeather(city) {
       Math.round(data.main.temp) + "°C";
     document.querySelector(".humidity-value").innerHTML =
       data.main.humidity + "%";
-    document.querySelector(".wind-value").innerHTML = data.wind.speed + " km/h";
+    document.querySelector(".wind-value").innerHTML =
+      Math.round(data.wind.speed) + " km/h";
 
     if (data.weather[0].main == "Clear") {
       weatherIcon.src = "svg/clear.svg";
