@@ -169,10 +169,6 @@ body {
 }
 
 @media (max-width: 520px) {
-  .weather-img {
-    width: 180px;
-  }
-
   .spec p {
     font-size: 25px;
   }
@@ -187,8 +183,17 @@ body {
 }
 
 @media (max-width: 400px) {
+  .weather-img {
+    width: 180px;
+  }
+
+  .search {
+    width: 75%;
+  }
+
   .search input {
     width: 60%;
+    padding: 17px;
   }
 
   .spec h3 {
