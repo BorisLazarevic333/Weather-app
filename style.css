@@ -158,10 +158,40 @@ body {
   .spec p {
     font-size: 30px;
   }
+
+  .temperature {
+    font-size: 40px;
+  }
+
+  .city-name {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 520px) {
   .spec p {
     font-size: 25px;
+  }
+
+  .temperature {
+    font-size: 35px;
+  }
+
+  .city-name {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  .spec p {
+    font-size: 17px;
+  }
+
+  .temperature {
+    font-size: 30px;
+  }
+
+  .city-name {
+    font-size: 30px;
   }
 }
