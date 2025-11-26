@@ -12,6 +12,7 @@ const searchInput = document.querySelector(".search-input");
 const mainEl = document.querySelector(".main");
 const error = document.querySelector(".error");
 const weatherIcon = document.querySelector(".weather-img");
+const logo = document.querySelector(".logo");
 
 // SEARCH FUNCTION
 
@@ -21,6 +22,7 @@ function performSearch() {
     mainEl.classList.remove("active");
   }
   search.classList.add("active");
+  logo.classList.add("active");
   searchInput.value = "";
 }
 
