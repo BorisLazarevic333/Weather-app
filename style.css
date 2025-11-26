@@ -260,7 +260,7 @@ body {
   .error {
     left: 29%;
     top: 15%;
-
+    display: none;
     font-size: 15px;
 
     margin-top: 35px;
