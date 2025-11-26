@@ -38,7 +38,7 @@ searchInput.addEventListener("keydown", (event) => {
 async function checkWeather(city) {
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
-  if (response.status == 404) {
+  if (response.status == 404 || city === "") {
     error.style.display = "block";
     mainEl.classList.remove("active");
   } else {
