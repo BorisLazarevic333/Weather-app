@@ -213,6 +213,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    border-radius: 0;
   }
 
   .logo {
@@ -254,6 +255,15 @@ body {
 
   .search-icon {
     width: 20px;
+  }
+
+  .error {
+    left: 29%;
+    top: 15%;
+
+    font-size: 15px;
+
+    margin-top: 35px;
   }
 
   .specs {
