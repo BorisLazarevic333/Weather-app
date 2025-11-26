@@ -201,6 +201,14 @@ body {
 }
 
 @media (max-width: 400px) {
+  body {
+    height: 100vh;
+  }
+
+  .card {
+    height: 100vh;
+  }
+
   .logo {
     width: 190px;
     left: 23%;
