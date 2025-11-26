@@ -203,28 +203,10 @@ body {
 @media (max-width: 400px) {
   html {
     height: 100vh;
-    /* Prevent the browser from scrolling the page on small screens */
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: none;
   }
 
   body {
     height: 100vh;
-    overflow: hidden;
-  }
-
-  .card {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    /* Lock the card to the viewport and hide any overflow */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
   }
 
   .logo {
@@ -241,17 +223,11 @@ body {
     width: 77%;
     justify-content: center;
     gap: 10px;
-    /* use fixed positioning inside the card so we don't push the document flow and cause scrolling */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 240px;
-    margin: 0;
+    margin: 240px auto 0px;
   }
 
   .search.active {
-    /* move the search box up inside the locked card */
-    transform: translate(-50%, -220px);
+    transform: translateY(-240px);
   }
 
   .search input {
