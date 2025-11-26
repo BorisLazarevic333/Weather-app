@@ -201,6 +201,10 @@ body {
 }
 
 @media (max-width: 400px) {
+  html {
+    height: 100vh;
+  }
+
   body {
     height: 100vh;
   }
